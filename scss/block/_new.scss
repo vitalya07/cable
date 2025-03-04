@@ -1,0 +1,94 @@
+.new {
+    padding: 120px 0;
+    background-image: linear-gradient(90deg, #F8F8F8 62.9%, $colorBtn 62.9%);
+    &__container {
+        max-width: 1750px;
+        margin: 0 auto;  
+    }
+    &__box {
+        background-image: url('../img/bg-2.png');
+        background-position: left top;
+        background-repeat: no-repeat;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 60px;
+    }
+    &__left {
+        max-width: 860px;
+        min-height: 950px;
+    }
+    &__top {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 10px;
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 40px;
+    }
+    &__title {
+        max-width: 660px;
+    }
+    &__descr {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: $grayColor;
+        margin-bottom: 44px;
+        max-width: 620px;
+    }
+    &__line {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 48px;
+    }
+    &__links {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 17px;
+    }
+    &__link {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 17px;
+        &-img {
+            width: 60px;
+            height: 60px;
+        }
+        &-title {
+            font-weight: 700;
+            color: #000;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 17px;
+            max-width: 218px;
+        }
+        &-descr {
+            font-size: 14px;
+            line-height: 22px;
+            color: $grayColor;
+            max-width: 265px;
+            margin-bottom: 130px;
+        }
+    }
+    &__right {
+        max-width: 860px;
+        min-height: 950px;
+        &-img {
+            width: 820px;
+            height: 640px;
+        }
+    }
+   
+}
