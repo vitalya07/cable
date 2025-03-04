@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const header = document.querySelector('.header'),
           headerLink = document.querySelectorAll('.header__link'),
           headerAddres = document.querySelector('.header__addres'),
-          headerContactsItem = document.querySelectorAll('.header__contacts-item');
+          headerContactsItem = document.querySelectorAll('.header__contacts-item'),
+          arrowTop = document.querySelector('.arrow__top');
 
 
     function changeHeaderBg() {
@@ -26,12 +27,27 @@ document.addEventListener('DOMContentLoaded', ()=> {
                     item.style.color = '#fff'
                 })
                 headerAddres.style.color = '#fff'
-                headerAddres.style.borderTop = '1px solid #444444'; 
-                headerAddres.style.borderBottom = '1px solid #444444'; 
+                headerAddres.style.borderTop = '1px solid rgb(199, 199, 199)'; 
+                headerAddres.style.borderBottom = '1px solid rgb(199, 199, 199)'; 
             }  
+            if (scrollY > 500) {
+                arrowTop.style.display = 'block';
+            } else {
+                arrowTop.style.display = 'none';
+            }
         })
     }      
     changeHeaderBg()
+
+    function scrollTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+    arrowTop.addEventListener('click', ()=>{
+        scrollTop();
+    })
     //появление подробнее
  
     const hitsItem = document.querySelectorAll('.hits__item-img');
@@ -72,6 +88,15 @@ document.addEventListener('DOMContentLoaded', ()=> {
         autoplay: 'play',
         arrows: false,
         pagination: true,
+        speed: 600,  
+    }).mount();
+    new Splide('#slider2', {
+        type   : 'loop',
+        perPage: 3,
+        perMove: 1,
+        autoplay: 'play',
+        arrows: false,
+        pagination: false,
         speed: 600,  
     }).mount();
 })
