@@ -1,0 +1,110 @@
+.header {
+    padding: 12px 40px;    
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        max-width: 200px;
+        max-height: 96px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff;
+        font-weight: 400;
+        transition: all .4s;
+        &:hover {
+            color: $colorBtn;
+        }
+        &-one {
+            position: relative;
+            margin-right: 20px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -10px;
+                width: 6px;
+                height: 1px;
+                background-color: #444444;
+                transform: translateY(-50%) rotate(50deg);
+                transition: all .4s;
+            
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -14px;
+                width: 6px;
+                height: 1px;
+                background-color: $grayColor;
+                transform: translateY(-50%) rotate(-50deg);
+                transition: all .4s;
+            }
+            &:hover {
+                &:before {
+                    background-color: $colorBtn;
+                }
+                &::after {
+                    background-color: $colorBtn;
+                }
+                
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        &-item {
+            font-weight: 400;
+            font-family: "Unbounded",sans-serif;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        &-img {
+            width: 15px;
+            height: 15px;
+            transform: rotate(-45deg);
+            transition: all .4s;
+        }
+        &:hover {
+            .header__btn-img {
+                transform: rotate(0);
+            }
+        }
+    }
+    &
+    &__addres {
+        width: 100%;
+        padding: 10px 0;
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        text-align: right;
+        border-top: 2px solid $grayColor;
+        border-bottom: 2px solid $grayColor;
+        padding-right: 338px;
+    }
+}
