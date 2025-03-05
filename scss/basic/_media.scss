@@ -93,6 +93,26 @@
             gap: 0;
         }
     }
+    .headers {
+        padding: 0 15px;
+    }
+    .pay {
+        padding: 0 15px;
+        &__information {
+            &-header {
+                padding: 0 15px;
+            }
+            &-title {
+                padding: 0 15px;
+            }
+            &-wrapper {
+                flex-wrap: wrap;
+            }
+        }
+        &__list {
+            padding: 0 15px;
+        }
+    }
 }
 @media(max-width: 993px) {
     .header {
@@ -477,6 +497,9 @@
                 width: 140px;
             }
         }
+    }
+    .top {
+        height: 370px;
     }
 }
 @media (max-width: 380px) {
