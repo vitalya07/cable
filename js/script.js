@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
         scrollTop();
     })
     //Всплывающее меню
-    const navElement = document.querySelector('.header__nav');
+    const navElement = document.querySelector('.header__link-one');
     const navWindow = document.querySelector('.header__nav-window'); 
 
     navElement.addEventListener('mouseenter', () => {
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     //slider
     new Splide('#slider1', {
         type: 'loop',
-        // autoplay: 'play',
+        autoplay: 'play',
         arrows: false,
         pagination: true,
         speed: 600,  
