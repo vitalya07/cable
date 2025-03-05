@@ -1,0 +1,136 @@
+.feedback {
+    background-color: #1f1e1e;
+    padding: 130px 15px 70px 15px;
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 115px;
+    }
+    &__left {
+        max-width: 459px;
+        min-height: 953px;
+        background-color: #fff;
+        padding: 62px 60px 80px 60px;
+        &-title {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            color: #000;
+            margin-bottom: 40px;
+        }
+        &-descr {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            color: $grayColor;
+            margin-bottom: 40px;
+        }
+    }
+    &__label {
+        width: 100%;
+        height: 66px;
+    }
+    &__input {
+        width: 100%;
+        height: 66px;
+        border: none;
+        border-bottom: 1px solid #000;
+        &:last-child {
+            margin-bottom: 40px;
+        }
+        &:focus {
+            outline: 1px solid #fff;
+        }
+    }
+    &__textarea {
+        width: 100%;
+        height: 120px;
+        border: none;
+        border-bottom: 1px solid #000;
+        resize: none;
+        margin-bottom: 40px;
+        &:focus {
+            outline: 1px solid #fff;
+        }
+    }
+    &__check {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        margin-bottom: 150px;
+        gap:10px;
+        &-policy {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+    &__right {
+        max-width: 565px;
+        min-height: 893px;
+        &-title {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 60px;
+            color: #fff;
+            margin-bottom: 60px;
+        }
+        &-subtitle {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        &-line {
+            width: 100%;
+            height: 2px;
+            background-color: $grayColor;
+            margin-bottom: 60px;
+        }
+        &-wrapper {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            gap: 50px;
+        }
+        &-logo {
+            width: 200px;
+            height: 70px;
+        }
+        &-header {
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        &-addres {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        &-link {
+            display: block;
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            margin-bottom: 20px;
+            &--last {
+                margin-bottom: 40px;
+            }
+        }
+        &-graph {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #fff;
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}

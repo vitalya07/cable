@@ -1,0 +1,86 @@
+.contacts {
+    padding: 170px 15px 120px 15px;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        margin-bottom: 100px;
+    }
+    &__title {
+        margin-bottom: 0;
+    }
+    &__number {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        color: #000;
+    }
+    &__addres {
+        margin-top: 50px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 25px;
+        color: $grayColor;
+        margin-bottom: 110px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    &__persone {
+        width: 353px;
+        height: 315px;
+        padding: 15px;
+        &-name {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 25px;
+            color: #000;
+            margin-bottom: 45px;
+            // &--2 {
+            //     margin-bottom: 70px;
+            // }
+        }
+        &-line {
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            margin-bottom: 30px;
+            &--1 {
+                margin-bottom: 30px;
+            }
+        }
+        &-position {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: $grayColor;
+            margin-bottom: 50px;
+            &--1 {
+                margin-bottom: 99px;
+            }
+        }
+        &-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 20px;
+        }
+        &-icon {
+            width: 30px;
+            height: 30px;
+        }
+        &-text {
+            font-size: 14px;
+            cursor: pointer;
+            transition: all .4s ease;
+            &:hover {
+                color: $colorBtn;
+            }
+        }
+    }
+}
