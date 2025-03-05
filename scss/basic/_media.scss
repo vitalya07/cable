@@ -498,8 +498,16 @@
             }
         }
     }
+    .title {
+        font-size: 30px;
+    }
     .top {
         height: 370px;
+    }
+    .requisites {
+        &__download {
+            font-size: 14px;
+        }
     }
 }
 @media (max-width: 380px) {

@@ -1,0 +1,33 @@
+.requisites {
+    &__download {
+        font-weight: 700;
+        font-size: 20px;
+        color: $colorBtn;
+    }
+    &__table {
+        padding: 0 15px;
+        width: 100%; 
+        border-collapse: collapse; 
+        margin-bottom: 60px;
+        &-one {
+            border: 1px solid $grayColor; 
+            padding: 10px; 
+            text-align: left; 
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            color: $grayColor;
+        }
+        &-two {
+            border: 1px solid $grayColor; 
+            padding: 10px; 
+            text-align: left; 
+            font-weight: 300;
+            font-size: 14px;
+            color: $grayColor;
+        }
+    }
+}
+.table {
+    padding: 0 10px;
+}
