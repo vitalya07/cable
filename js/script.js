@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
           headerContactsItem = document.querySelectorAll('.header__contacts-item'),
           arrowTop = document.querySelector('.arrow__top');
 
-
     function changeHeaderBg() {
         window.addEventListener('scroll', ()=> {
             if(scrollY > 50) {
@@ -31,14 +30,34 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 headerAddres.style.borderBottom = '1px solid rgb(199, 199, 199)'; 
             }  
             if (scrollY > 500) {
-                arrowTop.style.display = 'block';
+                arrowTop.style.display = 'block';                
             } else {
                 arrowTop.style.display = 'none';
             }
         })
     }      
+    const contentElement = document.querySelector('.arrow__top'); 
+
+    function checkScreenSize() {
+        if (window.innerWidth < 550) {
+            contentElement.style.display = 'none'; 
+        } else {
+            contentElement.style.display = 'block'; 
+        }
+    }
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
     changeHeaderBg()
 
+    //mobile menu
+    const hamburger = document.querySelector('.hamburger'),
+          closeMenu = document.querySelector('.header__mobile-close')  
+    hamburger.addEventListener('click', ()=> {
+        header.classList.add('active');
+    });
+    closeMenu.addEventListener('click', ()=> {
+        header.classList.remove('active')
+    })
     function scrollTop() {
         window.scrollTo({
             top: 0,
@@ -49,40 +68,37 @@ document.addEventListener('DOMContentLoaded', ()=> {
         scrollTop();
     })
     //Всплывающее меню
-    const navElement = document.querySelector('.header__nav'); // Элемент навигации
-    const navWindow = document.querySelector('.header__nav-window'); // Всплывающее меню
+    const navElement = document.querySelector('.header__nav');
+    const navWindow = document.querySelector('.header__nav-window'); 
 
     navElement.addEventListener('mouseenter', () => {
         navWindow.style.display = 'block'; 
     });
 
     navWindow.addEventListener('mouseenter', () => {
-        navWindow.style.display = 'block'; // Сохраняем меню открытым, если курсор над меню
+        navWindow.style.display = 'block';
     });
     navWindow.addEventListener('mouseleave', () => {
-        navWindow.style.display = 'none'; // Скрываем меню, когда курсор уходит с меню
+        navWindow.style.display = 'none'; 
     });
+    //Всплывающее меню на мобилке
+  const headerMobileMenu = document.querySelector('.header__mobile-menu'),
+        hedaerMobileItem = document.querySelector('.header__mobile-ltem--2');
+        hedaerMobileItem.addEventListener('click', ()=> {
+            headerMobileMenu.classList.toggle('active')
+        })
 
-
-
-
-    //появление подробнее
- 
+    //появление подробнее 
     const hitsItem = document.querySelectorAll('.hits__item-img');
-
     function removeHitsItem() {
         hitsItem.forEach(item => {
             item.classList.remove('active');
         });
-    }
-
+    };
     removeHitsItem();
-
     function addHitsItem(i) {
         hitsItem[i].classList.toggle('active');
-    }
-
-
+    };
     hitsItem.forEach((item, index) => {
         item.addEventListener('mouseenter', () => {
             addHitsItem(index); 
@@ -93,17 +109,12 @@ document.addEventListener('DOMContentLoaded', ()=> {
         });
 
     });
-
-
-
-
-
-
-
+   
+    
     //slider
     new Splide('#slider1', {
         type: 'loop',
-        autoplay: 'play',
+        // autoplay: 'play',
         arrows: false,
         pagination: true,
         speed: 600,  
@@ -116,6 +127,28 @@ document.addEventListener('DOMContentLoaded', ()=> {
         arrows: false,
         pagination: false,
         speed: 600,  
+        breakpoints: {
+            990: {
+                perPage: 2,
+            },
+            768: {
+                perPage: 2,
+                gap: '20px'
+            },
+            556: {
+                perPage: 1,
+                gap: 0,
+                padding: '40px'
+            },
+            450: {
+                padding: '10px',
+            },
+            360: {
+                padding: '2px',
+                gap: '10px'
+            },
+        }
+        
     }).mount();
 })
 

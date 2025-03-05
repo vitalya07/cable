@@ -1,5 +1,11 @@
 .news {
     padding: 130px 0 118px 0 ;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
     &__item {
         max-width: 360px;
         min-height: 482px;
