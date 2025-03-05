@@ -3,7 +3,9 @@
     position: fixed;
     width: 100%;
     z-index: 100;
-    
+    &__delivery {
+        background-color: #fff;
+    }
     &__wrapper {
         display: flex;
         align-items: center;
@@ -15,11 +17,6 @@
     }
     &__nav {
         position: relative;
-        // &.active {
-        //     .header__nav-window {
-        //         display: block;
-        //     }
-        // }
         &-window {
             position: absolute;
             width: 250px;
@@ -38,7 +35,10 @@
             transition: all .4s;
             &:hover {
                 color: $colorBtn;
-            }
+            }    
+            &--delivery {
+                color: #000;
+            }        
         }
     }
     &__list {
@@ -53,6 +53,9 @@
         color: #fff;
         font-weight: 400;
         transition: all .4s;
+        &-delivery {
+            color: #000;
+        }
         &:hover {
             color: $colorBtn;
         }
@@ -105,6 +108,9 @@
             font-size: 16px;
             color: #fff;
         }
+        &-delivery {
+            color: #000;
+        }
     }
     &__btn {
         display: flex;
@@ -134,6 +140,9 @@
         border-top: 2px solid $grayColor;
         border-bottom: 2px solid $grayColor;
         padding-right: 338px;
+        &-delivery {
+            color: #000;
+        }
     }
     &__mobile-menu {
         display: none;

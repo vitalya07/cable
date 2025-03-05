@@ -1,0 +1,32 @@
+.top {
+    background-image: url('../../img/delivery-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 675px;
+    padding-top: 100px;
+    position: relative;
+    &__back {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        &-main {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #fff;
+        }
+        &-map {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #fff;
+        }
+    }
+}
