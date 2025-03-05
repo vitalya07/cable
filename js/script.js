@@ -48,6 +48,24 @@ document.addEventListener('DOMContentLoaded', ()=> {
     arrowTop.addEventListener('click', ()=>{
         scrollTop();
     })
+    //Всплывающее меню
+    const navElement = document.querySelector('.header__nav'); // Элемент навигации
+    const navWindow = document.querySelector('.header__nav-window'); // Всплывающее меню
+
+    navElement.addEventListener('mouseenter', () => {
+        navWindow.style.display = 'block'; 
+    });
+
+    navWindow.addEventListener('mouseenter', () => {
+        navWindow.style.display = 'block'; // Сохраняем меню открытым, если курсор над меню
+    });
+    navWindow.addEventListener('mouseleave', () => {
+        navWindow.style.display = 'none'; // Скрываем меню, когда курсор уходит с меню
+    });
+
+
+
+
     //появление подробнее
  
     const hitsItem = document.querySelectorAll('.hits__item-img');

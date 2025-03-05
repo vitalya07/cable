@@ -13,6 +13,34 @@
         max-width: 200px;
         max-height: 96px;
     }
+    &__nav {
+        position: relative;
+        // &.active {
+        //     .header__nav-window {
+        //         display: block;
+        //     }
+        // }
+        &-window {
+            position: absolute;
+            width: 250px;
+            height: 150px;
+            background-color: #fff;
+            left: 0;
+            top: 40px;
+            padding: 20px;
+            display: none;
+        }
+        &-link {
+            font-size: 14px;
+            line-height: 36px;
+            color: #000000;
+            font-weight: 400;
+            transition: all .4s;
+            &:hover {
+                color: $colorBtn;
+            }
+        }
+    }
     &__list {
         display: flex;
         align-items: center;
@@ -30,7 +58,7 @@
         }
         &-one {
             position: relative;
-            margin-right: 20px;
+            margin-right: 20px;           
             &:before {
                 content: '';
                 position: absolute;
