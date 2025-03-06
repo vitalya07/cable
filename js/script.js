@@ -82,11 +82,24 @@ document.addEventListener('DOMContentLoaded', ()=> {
         navWindow.style.display = 'none'; 
     });
     //Всплывающее меню на мобилке
-  const headerMobileMenu = document.querySelector('.header__mobile-menu'),
+    const headerMobileMenu = document.querySelector('.header__mobile-menu'),
         hedaerMobileItem = document.querySelector('.header__mobile-ltem--2');
         hedaerMobileItem.addEventListener('click', ()=> {
             headerMobileMenu.classList.toggle('active')
+    })
+
+    const fillter = document.querySelector('.cables__controls-fillter--img'),
+           cables = document.querySelector('#cables'),
+           cablesClose = document.querySelector('.cables__controls-category--close');
+            
+    if(cables) {
+        fillter.addEventListener('click', ()=> {
+            cables.classList.add('active')
         })
+        cablesClose.addEventListener('click', ()=> {
+            cables.classList.remove('active')
+        })
+    }
 
     //появление подробнее 
     const hitsItem = document.querySelectorAll('.hits__item-img');
@@ -110,7 +123,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     });
    
-    
+   
     //slider
     new Splide('#slider1', {
         type: 'loop',

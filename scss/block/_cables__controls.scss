@@ -1,0 +1,89 @@
+.cables__controls {
+    &-container {
+        max-width: 1350px;
+        padding: 0 15px;
+    }
+    &-fillter {
+        display: none;    
+        justify-content: start;
+        align-items: center;
+        gap: 10px;   
+        &--img {
+            width: 30px;
+            height: 30px;
+            transform: rotate(90deg);
+            cursor: pointer;
+        }
+        &--name {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            color: #000;
+        }
+    }
+    &-wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 30px;
+    }
+  
+    &-left {
+        max-width: 1000px;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    &-category {
+        width: 315px;
+        height: 307px;
+        background-color: #fff;
+        padding: 30px;
+        border: 1px solid $grayColor;
+        &--title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000;
+            margin-bottom: 22px;
+        }
+        &--item {
+            position: relative;    
+            margin-bottom: 20px;       
+        }
+        &--list {
+            margin-left: 20px;
+        }
+        &--block {
+            position: absolute;
+            top: 3px;
+            left: -18px;
+            width: 16px;
+            height: 16px;
+            border: 2px solid $grayColor;
+            &.active {
+                border: 2px solid $colorBtn;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 10px;
+                    height: 10px;
+                    background-color: $colorBtn;
+                    transform: translate(-50%, -50%);
+                }
+            }
+           
+        }
+        &--link {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $grayColor;
+            transition: all .4s ease;
+            &:hover {
+                color: $colorBtn;
+            }
+        }
+    }
+}

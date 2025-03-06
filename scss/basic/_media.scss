@@ -113,6 +113,16 @@
             padding: 0 15px;
         }
     }
+    .cables__controls {        
+        &-category {
+            &--title {
+                margin-bottom: 10px;
+            }
+            &--item {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
 @media(max-width: 993px) {
     .header {
@@ -309,12 +319,65 @@
             gap: 50px;
         }
     }
+    .cables__controls {
+        &.active {
+            .cables__controls-category {
+                left: 0;
+            }
+        }
+        &-fillter {
+            display: flex;           
+        }
+        &-category {
+            position: fixed;
+            width: 50%;
+            height: 100vh;
+            background-color: #fff;
+            top: 0;
+            left: -100%;
+            padding-top: 250px;
+            transition: all .4s ease;
+            &--close {
+                position: relative;
+                top: 13px;
+                left: 50%;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 20px;
+                    height: 2px;
+                    background-color: #000;
+                    transform: rotate(45deg);
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 20px;
+                    height: 2px;
+                    background-color: #000;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+    .article {
+        &__right {
+            display: none;
+        }
+    }
     .footer{
         padding: 0 15px;
         min-height: 950px;
         &__wrapper {
             flex-wrap: wrap;
         }
+    }
+    .top__back {
+        left: 40%;
     }
 }
 @media(max-width: 768px) {
@@ -508,6 +571,9 @@
         &__download {
             font-size: 14px;
         }
+    }
+    .top__back {
+        display: none;
     }
 }
 @media (max-width: 380px) {

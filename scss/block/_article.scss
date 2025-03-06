@@ -1,0 +1,169 @@
+.article {
+    padding: 130px 0 150px 0;
+    &__top {
+        background-image: url(../img/article.jpg);
+    }
+    &__container {
+        max-width: 1350px;
+        padding: 0 15px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 40px;
+    }
+    &__left {
+        max-width: 890px;
+        &-img {
+            width: 100%;
+            height: 577px;
+            margin-bottom: 30px;
+        }
+        &-line {
+            width: 100%;
+            height: 1px;
+            background-color: #e6e6e6;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            color: #000;
+            margin-bottom: 30px;
+        }
+        &-subtitle {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 25px;
+            color: $grayColor;
+            margin-bottom: 25px;
+            &--last {
+                margin-bottom: 60px;
+            }
+        }
+        &-list {
+            margin-left: 30px;
+            margin-bottom: 20px;
+            &--item {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 30px;
+                color: $grayColor;
+                b {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &__back {        
+        &-article {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 25px;
+            border-top: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            padding: 40px 0;  
+            transition: all .4s ease; 
+            &:hover {
+                .article__back-text {
+                    transition: all .4s ease;
+                    color: $colorBtn;
+                }
+            }        
+        }
+        &-img {
+            width: 100px;
+            height: 100px;
+        }
+        &-subtitle {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: $grayColor;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: #000;
+        }
+    }
+    &__right {
+        width: 420px;
+        min-height: 650px;
+        padding: 40px;   
+        border: 1px solid #d5d5d5;      
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000;
+            margin-bottom: 30px;
+        }   
+        &-item {           
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            gap: 25px;
+            border-top: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            padding: 40px 0;
+            &:last-child {
+                border-bottom: none
+            }
+            &--first {
+                border-top: none
+            }
+            &--info {
+                max-width: 180px;
+            }
+            &--img {
+                width: 90px;
+                height: 90px;
+            }
+            &--date {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 20px;
+                color: $grayColor;
+            }
+            &--title {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000;
+            }            
+        }
+        &-category {
+            margin-top: 60px;
+            &--title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000;
+                margin-bottom: 30px;
+            }
+            &--box {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &--name {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000;
+            }
+            &--count {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;
+                color: $grayColor;
+            }
+        }
+    }
+}
