@@ -29,6 +29,24 @@
             }
         }
     }
+    .history {
+        &__item {
+            &-title {
+                font-size: 22px;
+                line-height: 30px
+            }
+            &-descr {
+                font-size: 15px;
+                line-height: 25px;
+            }
+            &-right {
+                &--img {
+                    width: 584px;
+                    min-height: 248px;
+                }
+            }
+        }       
+    }
 }
 @media(max-width: 1200px) {
     .header {
@@ -122,6 +140,25 @@
                 margin-bottom: 10px;
             }
         }
+    }
+    .history {
+        padding: 50px 0 0 150px;
+        &__item {
+            &-title {
+                font-size: 22px;
+                line-height: 30px
+            }
+            &-descr {
+                font-size: 15px;
+                line-height: 25px;
+            }
+            &-right {
+                &--img {
+                    width: 584px;
+                    min-height: 248px;
+                }
+            }
+        }       
     }
 }
 @media(max-width: 993px) {
@@ -369,11 +406,43 @@
             display: none;
         }
     }
+    .about {
+        &__wrapper {
+            flex-wrap: wrap;
+            padding: 0 15px;
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
     .footer{
         padding: 0 15px;
         min-height: 950px;
         &__wrapper {
             flex-wrap: wrap;
+        }
+    }
+    .history {
+        padding: 50px 15px;
+        &__item {
+            &-left {
+                order: 2;
+                width: 100%;
+                max-width: 100%;
+            }
+            &-right {
+                order: 1;
+                width: 100%;
+                max-width: 100%;
+                &--img {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            &-wrapper {
+                flex-direction: column;
+                gap: 0;
+            }
         }
     }
     .top__back {
@@ -471,6 +540,31 @@
             }
         }
     }
+    .about {
+        &__title {
+            font-size: 30px;
+        }
+        
+        &__right {
+            &-subtitle {
+                font-size: 30px;
+            }
+            &-top {
+                margin-bottom: 10px;
+            }
+        }
+        &__contacts {
+            padding: 50px 15px;
+        }
+    }
+    .history {
+        padding: 50px 15px;
+        &__item {
+          &-right {
+            min-height: 350px;
+          }
+        }
+    }
 }
 @media(max-width: 556px) {
     .main {
@@ -521,6 +615,12 @@
         }
         &__links {
             flex-wrap: wrap;
+        }
+    }
+    .history {
+        &__title {
+            font-size: 40px;
+            line-height: 50px;
         }
     }
     .footer{

@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__dialog-close">
+                <img src="icons/close.svg" alt="close">
+            </div>
+            <div class="modal__dialog-top">
+                <h2 class="modal__dialog-title">Оставить заявку</h2>
+            </div>
+            <form action="#" class="modal__dialog-form">
+                <label class="modal__dialog-label">
+                    <input type="name" class="modal__dialog-input" name="name" placeholder="Имя" id="modal-name" required>
+                </label>
+                <label class="modal__dialog-label">
+                    <input type="phone" class="modal__dialog-input" name="phone" placeholder="Телефон" id="modal-phone" required>
+                </label>
+                <textarea name="message-textarea" id="message-textarea" placeholder="Сообщение" class="modal__dialog-textarea"></textarea>
+                <label  class="modal__dialog-check">
+                    <input type="checkbox" class="modal__dialog-checkbox">
+                    <span class="modal__dialog-policy">Я принимаю соглашение сайта об обработке персональных данных.</span>
+                </label>
+                <button class="modal__btn btn">Отправить</button>
+            </form>
+        </div>
+    </div>
     <header class="header header__delivery">    
         <div class="header__wrapper">
             <a href="index.html" class="header__logo">
@@ -16,8 +40,8 @@
             </a>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a href="#" class="header__link header__link-one header__link-delivery">О компании</a></li>
-                    <li class="header__item"><a href="#" class="header__link header__link-delivery">Продукция</a></li>
+                    <li class="header__item"><a href="about.html" class="header__link header__link-one header__link-delivery">О компании</a></li>
+                    <li class="header__item"><a href="production.html" class="header__link header__link-delivery">Продукция</a></li>
                     <li class="header__item"><a href="pay.html" class="header__link header__link-delivery">Оплата</a></li>
                     <li class="header__item"><a href="delivery" class="header__link header__link-delivery">Доставка</a></li>
                     <li class="header__item"><a href="contacts.html" class="header__link header__link-delivery">Контакты</a></li>
@@ -25,13 +49,13 @@
                 <div class="header__nav-window">
                     <ul class="header__nav-items">
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link header__nav-link--delivery">Статьи</a>
+                            <a href="article1.html" class="header__nav-link header__nav-link--delivery">Статьи</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link header__nav-link--delivery">Сертификаты</a>
+                            <a href="sertificates.html" class="header__nav-link header__nav-link--delivery">Сертификаты</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link header__nav-link--delivery">Реквизиты</a>
+                            <a href="requisites.html" class="header__nav-link header__nav-link--delivery">Реквизиты</a>
                         </li>
                     </ul>
                 </div>
@@ -57,16 +81,16 @@
             <li class="header__mobile-item header__mobile-ltem--2"><span class="header__mobile-link header__mobile-link--2">О компании</span> <span class="header__mobile-arrow">></span>
                 <div class="header__mobile-window">
                     <ul class="header__mobile-window--list">
-                        <li class="header__mobile-window--item"><a href="#" class="header__mobile-window--link">Статьи</a></li>
-                        <li class="header__mobile-window--item"><a href="#" class="header__mobile-window--link">Сертификаты</a></li>
-                        <li class="header__mobile-window--item"><a href="#" class="header__mobile-window--link">Реквизиты</a></li>
+                        <li class="header__mobile-window--item"><a href="article1.html" class="header__mobile-window--link">Статьи</a></li>
+                        <li class="header__mobile-window--item"><a href="sertificates.html" class="header__mobile-window--link">Сертификаты</a></li>
+                        <li class="header__mobile-window--item"><a href="requisites.html" class="header__mobile-window--link">Реквизиты</a></li>
                     </ul>
                 </div>
             </li>
-            <li class="header__mobile-item"><a href="#" class="header__mobile-link">Продукция</a></li>
-            <li class="header__mobile-item"><a href="#" class="header__mobile-link">Оплата</a></li>
-            <li class="header__mobile-item"><a href="#" class="header__mobile-link">Доставка</a></li>
-            <li class="header__mobile-item"><a href="#" class="header__mobile-link">Контакты</a></li>
+            <li class="header__mobile-item"><a href="production.html" class="header__mobile-link">Продукция</a></li>
+            <li class="header__mobile-item"><a href="pay.html" class="header__mobile-link">Оплата</a></li>
+            <li class="header__mobile-item"><a href="delivery.html" class="header__mobile-link">Доставка</a></li>
+            <li class="header__mobile-item"><a href="contacts.html" class="header__mobile-link">Контакты</a></li>
         </ul>
         <div class="header__addres header__addres-delivery">
             111024, Москва, шоссе Энтузиастов, 5с4, офис 1305 (здание ВНИИКП)
@@ -95,12 +119,12 @@
                     (Всероссийский научно-исследовательский проектно-конструкторский и технологический институт кабельной промышленности)
                 </div>
                 <div class="contacts__wrapper">
-                    <div class="contacst__persone">
+                    <div class="contacts__persone">
                         <div class="contacts__persone-name contacts__persone-name--1">Бузлаев <br> Анатолий Васильевич</div>
                         <div class="contacts__persone-line contacts__persone-line--1"></div>
                         <div class="contacts__persone-position contacts__persone-position--1">ГЕНЕРАЛЬНЫЙ  ДИРЕКТОР</div>
                     </div>
-                    <div class="contacst__persone">
+                    <div class="contacts__persone">
                         <div class="contacts__persone-name contacts__persone-name--2">Ремнев <br> Андрей Николаевич</div>
                         <div class="contacts__persone-line contacts__persone-line--2"></div>
                         <div class="contacts__persone-position">ДИРЕКТОР <br> ПО ПРОДАЖАМ КПП</div>
@@ -111,7 +135,7 @@
                             <div class="contacts__persone-text">Доб 100</div>
                         </div>
                     </div>
-                    <div class="contacst__persone">
+                    <div class="contacts__persone">
                         <div class="contacts__persone-name contacts__persone-name--2">Журавлев <br>Александр Михайлович</div>
                         <div class="contacts__persone-line contacts__persone-line--2"></div>
                         <div class="contacts__persone-position">ДИРЕКТОР <br> ПО ПРОДАЖАМ КНС</div>
@@ -122,7 +146,7 @@
                             <div class="contacts__persone-text">Доб 200</div>
                         </div>
                     </div>
-                    <div class="contacst__persone">
+                    <div class="contacts__persone">
                         <div class="contacts__persone-name contacts__persone-name--2">Крылов <br>Георгий Вячеславович</div>
                         <div class="contacts__persone-line contacts__persone-line--2"></div>
                         <div class="contacts__persone-position">ЗАМ. ДИРЕКТОРА<br> ПО ПРОДАЖАМ КНС</div>
@@ -149,7 +173,7 @@
                             <label class="feedback__label">
                                 <input type="phone" class="feedback__input" name="phone" id="phone" placeholder="+7(___)-__-__-__-_">
                             </label>
-                            <textarea name="message" id="textarea" class="feedback__textarea" placeholder="Сообщение"></textarea>
+                            <textarea name="message-textarea" id="textarea" class="feedback__textarea" placeholder="Сообщение"></textarea>
                             <div class="feedback__check">
                                 <input type="checkbox" class="feedback__check-input">
                                 <p class="feedback__check-policy">Я принимаю соглашение сайта об обработке персональных данных.</p>
@@ -212,17 +236,17 @@
                     <h2 class="footer__center-title">Меню</h2>
                     <div class="footer__center-lists">
                         <ul class="footer__center-list">
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">О компании</a></li>                            
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">Статьи</a></li>                           
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">Реквизиты</a></li>                           
+                            <li class="footer__center-item"><a href="about.html" class="footer__center-link">О компании</a></li>                            
+                            <li class="footer__center-item"><a href="article1.html" class="footer__center-link">Статьи</a></li>                           
+                            <li class="footer__center-item"><a href="requisites.html" class="footer__center-link">Реквизиты</a></li>                           
                             <li class="footer__center-item"><a href="contacts.html" class="footer__center-link">Контакты</a></li>
                            
                         </ul>
                         <ul class="footer__center-list">                          
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">Продукция</a></li>                            
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">Сертификаты</a></li>                         
+                            <li class="footer__center-item"><a href="production.html" class="footer__center-link">Продукция</a></li>                            
+                            <li class="footer__center-item"><a href="sertificates.html" class="footer__center-link">Сертификаты</a></li>                         
                             <li class="footer__center-item"><a href="pay.html" class="footer__center-link">Оплата</a></li>
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">Доставка</a></li>
+                            <li class="footer__center-item"><a href="delivery.html" class="footer__center-link">Доставка</a></li>
                         </ul>
                     </div>
                    
@@ -241,7 +265,7 @@
                 </div>
             </div>
             <div class="footer__down">
-                <a href="#" class="footer__down-map">Карта сайта</a>
+                <a href="map.html" class="footer__down-map">Карта сайта</a>
                 <span class="footer__down-copy">©LC-Кабель 2025. Все права защищены.</span>
             </div>         
         </div>
@@ -249,6 +273,7 @@
     <section class="arrow__top">
         <img src="icons/upArrow.svg" alt="upArrow">
     </section>
+
     <script src="js/inputmask.min.js"></script>
     <script src="js/script.js"></script>
 </body>

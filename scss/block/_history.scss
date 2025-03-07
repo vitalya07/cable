@@ -1,0 +1,114 @@
+.history {
+    padding: 100px 0 0px 360px;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 70px;
+        color: #000;
+        max-width: 800px;
+        margin-bottom: 60px;
+    }
+    &__tabs {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 50px;
+    }
+    &__tab {
+        margin-bottom: 60px;
+        cursor: pointer;
+        width: 80px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+        font-weight: 700;
+        &.tab__active {
+            .history__tab-cyrcle {
+                background-color: $colorBtn;
+            }
+        }
+        &-date {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000;
+        }
+        &-cyrcle {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: $grayColor;
+            margin: 0 auto;
+        }
+    }    
+    &__content {
+        &-wrapper {
+            display: flex;
+        
+        }      
+    } 
+    &__item {
+        &-wrapper {
+            display: flex;
+            align-items: start;
+            justify-content: end;
+            gap: 60px;
+        }
+       
+        &-right {
+            max-width: 783px;
+            position: relative;
+            min-height: 510px;
+            &--img {
+                width: 783px;
+                min-height: 510px;
+            }
+            &--block {
+                width: 300px; 
+                height: 300px; 
+                background: #ffffff; 
+                clip-path: polygon(100% 50%, -8% 100%, 0% 100%, 0% 50%); 
+                position: absolute;
+                top: -150px;
+                left: 0;
+            }
+            
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 40px;
+        }
+        &-descr {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000;
+            margin-bottom: 45px;
+        }
+        &-element {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 10px;
+            &--icon {
+                width: 30px;
+                height: 30px;
+            }
+            &--name {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000;
+            }
+        }
+    }
+}

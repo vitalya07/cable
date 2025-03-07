@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__dialog-close">
+                <img src="icons/close.svg" alt="close">
+            </div>
+            <div class="modal__dialog-top">
+                <h2 class="modal__dialog-title">Оставить заявку</h2>
+            </div>
+            <form action="#" class="modal__dialog-form">
+                <label class="modal__dialog-label">
+                    <input type="name" class="modal__dialog-input" name="name" placeholder="Имя" id="modal-name" required>
+                </label>
+                <label class="modal__dialog-label">
+                    <input type="phone" class="modal__dialog-input" name="phone" placeholder="Телефон" id="modal-phone" required>
+                </label>
+                <textarea name="message-textarea" id="message-textarea" placeholder="Сообщение" class="modal__dialog-textarea"></textarea>
+                <label  class="modal__dialog-check">
+                    <input type="checkbox" class="modal__dialog-checkbox">
+                    <span class="modal__dialog-policy">Я принимаю соглашение сайта об обработке персональных данных.</span>
+                </label>
+                <button class="modal__btn btn">Отправить</button>
+            </form>
+        </div>
+    </div>
     <header class="header header__delivery">    
         <div class="header__wrapper">
             <a href="index.html" class="header__logo">
@@ -16,19 +40,19 @@
             </a>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a href="#" class="header__link header__link-one header__link-delivery">О компании</a></li>
-                    <li class="header__item"><a href="#" class="header__link header__link-delivery">Продукция</a></li>
-                    <li class="header__item"><a href="#" class="header__link header__link-delivery">Оплата</a></li>
+                    <li class="header__item"><a href="about.html" class="header__link header__link-one header__link-delivery">О компании</a></li>
+                    <li class="header__item"><a href="production.html" class="header__link header__link-delivery">Продукция</a></li>
+                    <li class="header__item"><a href="pay.html" class="header__link header__link-delivery">Оплата</a></li>
                     <li class="header__item"><a href="delivery" class="header__link header__link-delivery">Доставка</a></li>
                     <li class="header__item"><a href="contacts.html" class="header__link header__link-delivery">Контакты</a></li>
                 </ul>
                 <div class="header__nav-window">
                     <ul class="header__nav-items">
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link header__nav-link--delivery">Статьи</a>
+                            <a href="article1.html" class="header__nav-link header__nav-link--delivery">Статьи</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link header__nav-link--delivery">Сертификаты</a>
+                            <a href="sertificates.html" class="header__nav-link header__nav-link--delivery">Сертификаты</a>
                         </li>
                         <li class="header__nav-item">
                             <a href="requisites.html" class="header__nav-link header__nav-link--delivery">Реквизиты</a>
@@ -57,16 +81,16 @@
             <li class="header__mobile-item header__mobile-ltem--2"><span class="header__mobile-link header__mobile-link--2">О компании</span> <span class="header__mobile-arrow">></span>
                 <div class="header__mobile-window">
                     <ul class="header__mobile-window--list">
-                        <li class="header__mobile-window--item"><a href="#" class="header__mobile-window--link">Статьи</a></li>
-                        <li class="header__mobile-window--item"><a href="#" class="header__mobile-window--link">Сертификаты</a></li>
-                        <li class="header__mobile-window--item"><a href="#" class="header__mobile-window--link">Реквизиты</a></li>
+                        <li class="header__mobile-window--item"><a href="article1.html" class="header__mobile-window--link">Статьи</a></li>
+                        <li class="header__mobile-window--item"><a href="sertificates.html" class="header__mobile-window--link">Сертификаты</a></li>
+                        <li class="header__mobile-window--item"><a href="requisites.html" class="header__mobile-window--link">Реквизиты</a></li>
                     </ul>
                 </div>
             </li>
-            <li class="header__mobile-item"><a href="#" class="header__mobile-link">Продукция</a></li>
-            <li class="header__mobile-item"><a href="#" class="header__mobile-link">Оплата</a></li>
-            <li class="header__mobile-item"><a href="#" class="header__mobile-link">Доставка</a></li>
-            <li class="header__mobile-item"><a href="#" class="header__mobile-link">Контакты</a></li>
+            <li class="header__mobile-item"><a href="production.html" class="header__mobile-link">Продукция</a></li>
+            <li class="header__mobile-item"><a href="pay.html" class="header__mobile-link">Оплата</a></li>
+            <li class="header__mobile-item"><a href="delivery.html" class="header__mobile-link">Доставка</a></li>
+            <li class="header__mobile-item"><a href="contacts.html" class="header__mobile-link">Контакты</a></li>
         </ul>
         <div class="header__addres header__addres-delivery">
             111024, Москва, шоссе Энтузиастов, 5с4, офис 1305 (здание ВНИИКП)
@@ -80,7 +104,7 @@
                     <div class="top__img">
                         <img src="icons/Chevron-Right.svg" alt="chewron__right">
                     </div>
-                    <a href="#" class="top__back-map">Карта сайта</a>
+                    <a href="about.html" class="top__back-map">О нас</a>
                 </div>
             </div>
         </article>
@@ -88,15 +112,209 @@
             <div class="container about__container">
                 <div class="about__wrapper">
                     <div class="about__left">
-                        <h1 class="abouut__title">О нас</h1>
+                        <h1 class="about__title">О нас</h1>
                     </div>
                     <div class="about__right">
                         <div class="about__right-top">
                             <div class="title__cyrcle"></div>
-                            <h2 class="about__right-title">Кабельная промышленность</h2>
-                            <h2 class="about__right-subtitle">Лидер кабельной индустрии</h2>
-                            <h2 class="about__right-head">Ведущий инноватор в отрасли с богатым опытом передовых разработок</h2>
-                            <h2 class="about__right-descr">Наше собственное производство кабельной продукции под брендом LC-Кабель позволяет компаниям не только гарантировать высокое качество своей продукции, но и оперативно реагировать на запросы рынка. АО «Лидер-Компаунд» один из крупнейших заводов кабельной промышленности, который зарекомендовал себя как надежный производитель с многолетним опытом.</h2>
+                            <h2 class="about__right-title">Кабельная промышленность</h2>                            
+                        </div>
+                        <h2 class="about__right-subtitle">Лидер кабельной индустрии</h2>
+                        <div class="line"></div>
+                        <h2 class="about__right-head">Ведущий инноватор в отрасли с богатым опытом передовых разработок</h2>
+                        <h2 class="about__right-descr">Наше собственное производство кабельной продукции под брендом LC-Кабель позволяет компаниям не только гарантировать высокое качество своей продукции, но и оперативно реагировать на запросы рынка. АО «Лидер-Компаунд» один из крупнейших заводов кабельной промышленности, который зарекомендовал себя как надежный производитель с многолетним опытом.</h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </article>
+        <article class="history">
+            <div class="history__container">
+                <div class="history__top">
+                    <div class="title__cyrcle"></div>
+                    <h2 class="history__sybtitle">История создания</h2>
+                </div>
+                <div class="history__title">Наше стремление занять лидирующие позиции.</div>
+                <div class="history__tabs">
+                    <div class="history__tab tab__active">
+                        2022
+                        <div class="history__tab-cyrcle"></div>
+                    </div>
+                    <div class="history__tab">
+                        2023
+                        <div class="history__tab-cyrcle"></div>
+                    </div>
+                    <div class="history__tab">
+                        2024
+                        <div class="history__tab-cyrcle"></div>
+                    </div>
+                </div>
+                <div class="history__content">
+                    <div class="history__content-wrapper">
+                        <div class="history__item">
+                            <div class="history__item-wrapper">
+                                <div class="history__item-left">
+                                    <h3 class="history__item-title">Освоение производства саморегулирующего нагревательного кабеля</h3>
+                                    <p class="history__item-descr">В ответ на растущие потребности рынка и стремление расширить ассортимент, в 2022 году руководство завода АО «ЛИДЕР-КОМПАУНД» приняло решение открыть новое направление, связанное с производством саморегулирующего нагревательного кабеля под торговой маркой LC-Кабель, а также проводов и силового кабеля с сечением жилы до 25 мм².</p>
+                                    <ul class="history__item-list">
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Система контроля качества</div>
+                                        </li>
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Инновации и иследования</div>
+                                        </li>
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Технологическое исследования</div>
+                                        </li>
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Надежность и долговечность продукции</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="history__item-right">
+                                    <div class="history__item-right--img">
+                                        <img src="img/cable_manufacture.jpg" alt="">
+                                        <div class="history__item-right--block"></div>
+                                    </div>
+                                </div>
+                            </div>                                
+                        </div>
+                        <div class="history__item">
+                            <div class="history__item-wrapper">
+                                <div class="history__item-left">
+                                    <h3 class="history__item-title">Запуск OEM-производства</h3>
+                                    <p class="history__item-descr">Открытие направления OEM-производства на заводе стало результатом внимательного анализа потребностей наших клиентов и стремления предоставить им максимально индивидуализированные решения.<br> Позволило нам укрепить партнерские отношения с нашими заказчиками и предложить им высококачественные и надежные решения в сфере кабельной продукции. </p>
+                                    <ul class="history__item-list">
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Система контроля качества</div>
+                                        </li>
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Инновации и иследования</div>
+                                        </li>
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Технологическое исследования</div>
+                                        </li>
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Надежность и долговечность продукции</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="history__item-right">
+                                    <div class="history__item-right--img">
+                                        <img src="img/first-cable.jpg" alt="">
+                                        <div class="history__item-right--block"></div>
+                                    </div>
+                                </div>
+                            </div>                                
+                        </div>
+                        <div class="history__item">
+                            <div class="history__item-wrapper">
+                                <div class="history__item-left">
+                                    <h3 class="history__item-title">Освоение производства силового кабеля </h3>
+                                    <p class="history__item-descr">В 2024 году в рамках нового инвестиционного проекта наш завод начал производство силовых кабелей сечением до 240 мм², а также LAN-кабелей с количеством пар до 50. В настоящее время мы активно занимаемся процессом сертификации нашей расширенной линейки кабельной продукции. </p>
+                                    <ul class="history__item-list">
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Система контроля качества</div>
+                                        </li>
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Инновации и иследования</div>
+                                        </li>
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Технологическое исследования</div>
+                                        </li>
+                                        <li class="history__item-element">
+                                            <div class="history__item-element--icon">
+                                                <img src="icons/check.svg" alt="check">
+                                            </div>
+                                            <div class="history__item-element--name">Надежность и долговечность продукции</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="history__item-right">
+                                    <div class="history__item-right--img">
+                                        <img src="img/cable_drums.jpg" alt="cable-drums">
+                                        <div class="history__item-right--block"></div>
+                                    </div>
+                                </div>
+                            </div>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="contacts about__contacts">
+            <div class="container">
+                <div class="about__contacts-title">Наши сотрудники</div>
+                <div class="contacts__wrapper">
+                    <div class="contacts__persone">
+                        <div class="contacts__persone-name contacts__persone-name--1">Бузлаев <br> Анатолий Васильевич</div>
+                        <div class="contacts__persone-line contacts__persone-line--1"></div>
+                        <div class="contacts__persone-position contacts__persone-position--1">ГЕНЕРАЛЬНЫЙ  ДИРЕКТОР</div>
+                    </div>
+                    <div class="contacts__persone">
+                        <div class="contacts__persone-name contacts__persone-name--2">Ремнев <br> Андрей Николаевич</div>
+                        <div class="contacts__persone-line contacts__persone-line--2"></div>
+                        <div class="contacts__persone-position">ДИРЕКТОР <br> ПО ПРОДАЖАМ КПП</div>
+                        <div class="contacts__persone-bottom">
+                            <div class="contacts__persone-icon">
+                                <img src="icons/phone-message.svg" alt="phone-message">
+                            </div>
+                            <div class="contacts__persone-text">Доб 100</div>
+                        </div>
+                    </div>
+                    <div class="contacts__persone">
+                        <div class="contacts__persone-name contacts__persone-name--2">Журавлев <br>Александр Михайлович</div>
+                        <div class="contacts__persone-line contacts__persone-line--2"></div>
+                        <div class="contacts__persone-position">ДИРЕКТОР <br> ПО ПРОДАЖАМ КНС</div>
+                        <div class="contacts__persone-bottom">
+                            <div class="contacts__persone-icon">
+                                <img src="icons/phone-message.svg" alt="phone-message">
+                            </div>
+                            <div class="contacts__persone-text">Доб 200</div>
+                        </div>
+                    </div>
+                    <div class="contacts__persone">
+                        <div class="contacts__persone-name contacts__persone-name--2">Крылов <br>Георгий Вячеславович</div>
+                        <div class="contacts__persone-line contacts__persone-line--2"></div>
+                        <div class="contacts__persone-position">ЗАМ. ДИРЕКТОРА<br> ПО ПРОДАЖАМ КНС</div>
+                        <div class="contacts__persone-bottom">
+                            <div class="contacts__persone-icon">
+                                <img src="icons/phone-message.svg" alt="phone-message">
+                            </div>
+                            <div class="contacts__persone-text">Доб 210</div>
                         </div>
                     </div>
                 </div>
@@ -131,17 +349,17 @@
                     <h2 class="footer__center-title">Меню</h2>
                     <div class="footer__center-lists">
                         <ul class="footer__center-list">
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">О компании</a></li>                            
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">Статьи</a></li>                           
+                            <li class="footer__center-item"><a href="about.html" class="footer__center-link">О компании</a></li>                            
+                            <li class="footer__center-item"><a href="article1.html" class="footer__center-link">Статьи</a></li>                           
                             <li class="footer__center-item"><a href="requisites.html" class="footer__center-link">Реквизиты</a></li>                           
                             <li class="footer__center-item"><a href="contacts.html" class="footer__center-link">Контакты</a></li>
                            
                         </ul>
                         <ul class="footer__center-list">                          
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">Продукция</a></li>                            
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">Сертификаты</a></li>                         
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">Оплата</a></li>
-                            <li class="footer__center-item"><a href="#" class="footer__center-link">Доставка</a></li>
+                            <li class="footer__center-item"><a href="production.html" class="footer__center-link">Продукция</a></li>                            
+                            <li class="footer__center-item"><a href="sertificates.html" class="footer__center-link">Сертификаты</a></li>                         
+                            <li class="footer__center-item"><a href="pay.html" class="footer__center-link">Оплата</a></li>
+                            <li class="footer__center-item"><a href="delivery.html" class="footer__center-link">Доставка</a></li>
                         </ul>
                     </div>
                    
@@ -160,7 +378,7 @@
                 </div>
             </div>
             <div class="footer__down">
-                <a href="#" class="footer__down-map">Карта сайта</a>
+                <a href="map.html" class="footer__down-map">Карта сайта</a>
                 <span class="footer__down-copy">©LC-Кабель 2025. Все права защищены.</span>
             </div>         
         </div>
@@ -168,6 +386,7 @@
     <section class="arrow__top">
         <img src="icons/upArrow.svg" alt="upArrow">
     </section>
+    <script src="js/inputmask.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
